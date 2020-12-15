@@ -8,7 +8,7 @@ const ShopScreen = () => {
 
     useEffect(()=>{
         const fetchProducts = async () => {
-            const { data } = await axios.get('/api/products')
+            const { data } = await axios.get('https://ecommerce-app-um.herokuapp.com/api/products')
 
             setProducts(data)
         }
